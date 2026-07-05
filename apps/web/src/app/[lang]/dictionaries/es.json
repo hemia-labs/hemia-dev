@@ -1,0 +1,141 @@
+{
+  "nav": {
+    "products": "Productos",
+    "openSource": "Open Source",
+    "standards": "Estándares",
+    "resources": "Recursos",
+    "engineering": "Ingeniería",
+    "labs": "Labs",
+    "github": "GitHub",
+    "ecosystem": "Ecosistema"
+  },
+  "footer": {
+    "rights": "Todos los derechos reservados",
+    "cols": {
+      "platform": "Plataforma",
+      "data": "Datos",
+      "security": "Seguridad",
+      "tools": "Herramientas",
+      "resources": "Recursos",
+      "explore": "Explorar",
+      "company": "Empresa",
+      "legal": "Legal",
+      "social": "Social"
+    }
+  },
+  "home": {
+    "hero": {
+      "badge": "El ecosistema para developers de Hemia",
+      "titleTop": "Herramientas para",
+      "titleBottom": "quienes construyen.",
+      "text": "Productos, proyectos open source, recursos y estándares creados por el equipo de Hemia para diseñar y desarrollar mejores experiencias digitales.",
+      "ctaPrimary": "Explorar productos",
+      "ctaSecondary": "Ver en GitHub"
+    },
+    "pillars": {
+      "products": "Productos operados por Hemia. Gratuitos, freemium o de pago.",
+      "openSource": "Librerías, SDKs y herramientas públicas con licencia clara.",
+      "standards": "Los criterios con los que diseñamos, construimos y mantenemos.",
+      "resources": "Templates, componentes y configuraciones listos para usar.",
+      "engineering": "Decisiones y aprendizajes escritos desde la práctica.",
+      "labs": "Experimentos y prototipos antes de ser productos."
+    },
+    "products": {
+      "eyebrow": "Productos de Hemia",
+      "title": "Herramientas para resolver problemas concretos de developers y equipos."
+    },
+    "openSource": {
+      "eyebrow": "Open source",
+      "title": "Construimos en abierto.",
+      "cta": "Explorar open source"
+    },
+    "repoDescriptions": [
+      "Validación de datos tipada, compartida entre frontend y backend.",
+      "Componentes accesibles con tokens propios sobre Tailwind.",
+      "Herramienta de línea de comandos para hacer scaffolding de proyectos."
+    ],
+    "postTitles": [
+      "Cómo evaluamos respuestas de IA antes de llevarlas a producción.",
+      "Por qué reemplazamos nuestro sistema de permisos.",
+      "Lo que aprendimos manteniendo un monorepo con varios productos."
+    ],
+    "standards": {
+      "eyebrow": "Estándares",
+      "title": "Así construimos."
+    },
+    "resources": {
+      "eyebrow": "Recursos",
+      "title": "Empieza con una base sólida.",
+      "cta": "Ver todos los recursos"
+    },
+    "engineering": {
+      "eyebrow": "Ingeniería",
+      "title": "Notas desde el proceso.",
+      "cta": "Leer Engineering"
+    },
+    "labs": {
+      "eyebrow": "Labs",
+      "title": "Experimentos en progreso.",
+      "cta": "Entrar a Labs",
+      "badge": "Experimento"
+    },
+    "changelog": {
+      "title": "Lo último que construimos.",
+      "cta": "Ver changelog"
+    },
+    "ecosystem": {
+      "badge": "Parte de Hemia",
+      "title": "Tecnología creada dentro de un ecosistema de producto y software.",
+      "text": "Hemia.dev forma parte de Hemia, una empresa de producto, software e inteligencia artificial que diseña y desarrolla soluciones digitales para organizaciones en México y Latinoamérica.",
+      "ctaPrimary": "Conocer Hemia",
+      "ctaSecondary": "Trabajar con Hemia"
+    },
+    "cta": {
+      "title": "Construye con Hemia.",
+      "text": "Usa nuestras herramientas, explora el código, comparte feedback o contribuye a los proyectos abiertos.",
+      "ctaPrimary": "Explorar el ecosistema",
+      "ctaSecondary": "Seguir en GitHub"
+    }
+  },
+  "products": {
+    "title": "Productos",
+    "subtitle": "Todo lo que Hemia construye y mantiene.",
+    "viewDocs": "Ver documentación"
+  },
+  "lab": {
+    "title": "Lab",
+    "subtitle": "Experimentos y prototipos. Nada de esto es estable."
+  },
+  "changelog": {
+    "title": "Changelog",
+    "subtitle": "Lanzamientos y actualizaciones de la plataforma."
+  },
+  "blog": {
+    "title": "Blog",
+    "subtitle": "Contenido técnico de Hemia. Próximamente."
+  },
+  "about": {
+    "title": "Sobre Hemia",
+    "text": "Hemia construye productos y herramientas para developers. Este es el punto de partida: reemplaza este texto con la historia real."
+  },
+  "contact": {
+    "title": "Contacto",
+    "subtitle": "¿Preguntas, ideas o feedback? Escríbenos."
+  },
+  "openSourcePage": {
+    "title": "Construimos en abierto.",
+    "text": "Librerías, componentes, templates y herramientas que usamos para construir productos dentro del ecosistema Hemia. Open source con intención: cada proyecto con propósito, licencia y mantenedor."
+  },
+  "standardsPage": {
+    "title": "Así construimos.",
+    "text": "Estándares y principios que usamos para tomar decisiones de producto, diseño e ingeniería. No son reglas universales: son criterios que el equipo mantiene y evoluciona."
+  },
+  "resourcesPage": {
+    "title": "Empieza con una base sólida.",
+    "text": "Templates, componentes, configuraciones y recursos listos para adaptar a tu siguiente proyecto."
+  },
+  "engineeringPage": {
+    "title": "Notas desde el proceso.",
+    "text": "Decisiones, problemas y aprendizajes del equipo mientras diseñamos, construimos y operamos productos. Publicamos desde la práctica, no desde la tendencia."
+  }
+}
