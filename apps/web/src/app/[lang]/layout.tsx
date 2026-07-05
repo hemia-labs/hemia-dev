@@ -30,6 +30,8 @@ export const metadata: Metadata = {
   },
   description: "Hemia builds products and tools for developers.",
   metadataBase: new URL("https://hemia.dev"),
+  openGraph: { images: ["/og.webp"] },
+  twitter: { card: "summary_large_image", images: ["/og.webp"] },
 };
 
 export function generateStaticParams() {

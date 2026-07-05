@@ -18,18 +18,12 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
-import { products, experiments, changelog } from "@/lib/data";
+import { products, repos, posts, experiments, changelog } from "@/lib/data";
 import { getDictionary, hasLocale, type Locale } from "../dictionaries";
 import { notFound } from "next/navigation";
 
-// ponytail: contenido mock (repos, posts, filtros); sustituir por datos reales cuando existan
+// ponytail: contenido mock (posts, filtros); sustituir por datos reales cuando existan
 // ponytail: descripciones/títulos vienen del diccionario por índice
-const repos = [
-  { name: "hemia/schema", language: "TypeScript", stars: "1.2k", version: "v0.4.1", license: "MIT" },
-  { name: "hemia/ui", language: "TypeScript", stars: "860", version: "v0.2.0", license: "MIT" },
-  { name: "hemia/cli", language: "Go", stars: "430", version: "v0.1.3", license: "Apache-2.0" },
-];
-
 const standardsTags = [
   "Engineering",
   "Product",
@@ -47,12 +41,6 @@ const resourceFilters = [
   "APIs",
   "Design systems",
   "Product",
-];
-
-const posts = [
-  { topic: "AI", author: "Sofía Almada", date: "2026-06-28", readingTime: "8 min" },
-  { topic: "Backend", author: "Marco Ibáñez", date: "2026-06-14", readingTime: "11 min" },
-  { topic: "Infrastructure", author: "Lucía Ferrer", date: "2026-05-30", readingTime: "6 min" },
 ];
 
 export default async function Home({
@@ -202,7 +190,7 @@ export default async function Home({
           </Button>
         </div>
         <div className="grid gap-4 md:grid-cols-3">
-          {repos.map((r, i) => (
+          {repos.slice(0, 3).map((r, i) => (
             <Card
               key={r.name}
               className="rounded-card transition-all duration-200 hover:-translate-y-1 hover:border-primary/50"
@@ -292,7 +280,7 @@ export default async function Home({
             </Button>
           </div>
           <div className="divide-y border-y">
-            {posts.map((post, i) => (
+            {posts.slice(0, 3).map((post, i) => (
               <Link
                 key={i}
                 href={href("/engineering")}
@@ -329,7 +317,7 @@ export default async function Home({
           </Button>
         </div>
         <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
-          {experiments.map((e) => (
+          {experiments.slice(0, 3).map((e, i) => (
             <Link key={e.slug} href={href(`/lab/${e.slug}`)}>
               <Card className="h-full rounded-card transition-all duration-200 hover:-translate-y-1 hover:border-primary/50">
                 <CardHeader>
@@ -337,7 +325,9 @@ export default async function Home({
                     {t.labs.badge}
                   </Badge>
                   <CardTitle>{e.name}</CardTitle>
-                  <CardDescription>{e.description}</CardDescription>
+                  <CardDescription>
+                    {dict.lab.experimentDescriptions[i]}
+                  </CardDescription>
                 </CardHeader>
               </Card>
             </Link>

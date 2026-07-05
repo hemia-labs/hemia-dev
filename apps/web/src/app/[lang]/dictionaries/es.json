@@ -106,11 +106,44 @@
       "Construido en abierto.",
       "Mantenido en producción."
     ],
+    "detail": {
+      "featuresEyebrow": "Características",
+      "featuresTitle": "Qué incluye.",
+      "specsTitle": "Especificaciones",
+      "releasesTitle": "Lanzamientos",
+      "moreEyebrow": "Ecosistema",
+      "moreTitle": "Más productos de Hemia.",
+      "moreCta": "Ver todos los productos",
+      "quickstartEyebrow": "Empieza",
+      "quickstartTitle": "En marcha en segundos."
+    },
     "viewDocs": "Ver documentación"
   },
   "lab": {
     "title": "Lab",
-    "subtitle": "Experimentos y prototipos. Nada de esto es estable."
+    "subtitle": "Experimentos y prototipos. Nada de esto es estable.",
+    "eyebrow": "Labs",
+    "badge": "Experiment",
+    "slogan": ["Hechos para probar cosas.", "No para durar.", "Algunos llegan a producto."],
+    "status": { "active": "activo", "archived": "archivado" },
+    "experimentDescriptions": [
+      "Primer experimento del laboratorio. Un placeholder para montar el pipeline.",
+      "Playground interactivo para probar prompts contra varios modelos.",
+      "Renderizado de componentes React en el edge, cerca del usuario.",
+      "Un explorador visual de tipos inferidos de TypeScript. Archivado."
+    ],
+    "cta": {
+      "title": "Mira lo que se lanza.",
+      "text": "Los experimentos que gradúan terminan en Productos.",
+      "button": "Explorar productos"
+    },
+    "detail": {
+      "disclaimer": "Los experimentos son inestables por diseño. Todo lo de aquí puede cambiar o desaparecer sin aviso.",
+      "otherEyebrow": "Lab",
+      "otherTitle": "Otros experimentos.",
+      "otherCta": "Volver a Lab",
+      "github": "Ver en GitHub"
+    }
   },
   "changelog": {
     "title": "Changelog",
@@ -129,19 +162,130 @@
     "subtitle": "¿Preguntas, ideas o feedback? Escríbenos."
   },
   "openSourcePage": {
+    "eyebrow": "Open source",
+    "slogan": ["Abierto por diseño.", "Documentado para usarse.", "Mantenido para durar."],
     "title": "Construimos en abierto.",
-    "text": "Librerías, componentes, templates y herramientas que usamos para construir productos dentro del ecosistema Hemia. Open source con intención: cada proyecto con propósito, licencia y mantenedor."
+    "featured": {
+      "eyebrow": "Destacado",
+      "texts": [
+        "Convierte cualquier repo en un grafo consultable (símbolos, llamadas, dependencias) y lo expone vía MCP: los agentes navegan la estructura del código con cientos de tokens en lugar de decenas de miles.",
+        "El framework de documentos agénticos: define plantillas como código y genera PDF, DOCX y HTML de forma determinística. Los agentes escriben JSON vía MCP; Docrail escribe el documento con gobernanza, versionado y marca.",
+        "El corazón de la validación en Hemia: define el esquema una vez, obtén tipos inferidos y mensajes de error legibles en cliente y servidor.",
+        "Componentes accesibles sobre Radix, estilados con los tokens de diseño de Hemia. Copia el código: sin dependencia de runtime.",
+        "Scaffolding, generadores de código y deploys de preview sin salir de la terminal."
+      ],
+      "github": "Ver en GitHub",
+      "viewProduct": "Ver producto"
+    },
+    "moreTitle": "Más repositorios.",
+    "text": "Librerías, componentes, templates y herramientas que usamos para construir productos dentro del ecosistema Hemia. Open source con intención: cada proyecto con propósito, licencia y mantenedor.",
+    "repoDescriptions": [
+      "Validación de datos tipada, compartida entre frontend y backend.",
+      "Componentes accesibles con tokens propios sobre Tailwind.",
+      "Herramienta de línea de comandos para scaffolding de proyectos.",
+      "Configuraciones compartidas de TypeScript, ESLint y Prettier.",
+      "Hooks de React que reutilizamos en todos los productos.",
+      "Tema de documentación construido sobre fumadocs."
+    ],
+    "contribute": {
+      "title": "Contribuye.",
+      "text": "Issues, ideas y pull requests son bienvenidos en todos los repositorios.",
+      "cta": "Síguenos en GitHub"
+    }
   },
   "standardsPage": {
+    "eyebrow": "Standards",
     "title": "Así construimos.",
-    "text": "Estándares y principios que usamos para tomar decisiones de producto, diseño e ingeniería. No son reglas universales: son criterios que el equipo mantiene y evoluciona."
+    "text": "Estándares y principios que usamos para tomar decisiones de producto, diseño e ingeniería. No son reglas universales: son criterios que el equipo mantiene y evoluciona.",
+    "slogan": ["Criterios, no reglas.", "Escritos desde la práctica.", "Mantenidos en equipo."],
+    "disciplines": [
+      {
+        "name": "Ingeniería",
+        "principles": [
+          { "title": "El código siempre se revisa", "text": "Ningún cambio llega a main sin una segunda mirada." },
+          { "title": "Aburrido antes que ingenioso", "text": "Elegimos la solución que cualquiera del equipo pueda mantener a las 3am." }
+        ]
+      },
+      {
+        "name": "Producto",
+        "principles": [
+          { "title": "El problema antes que la solución", "text": "No se construye nada sin explicar qué problema resuelve y para quién." },
+          { "title": "Medir antes de opinar", "text": "Las decisiones de producto se discuten con datos, no con jerarquía." }
+        ]
+      },
+      {
+        "name": "Diseño",
+        "principles": [
+          { "title": "Tokens, no valores", "text": "Ningún color o radio hardcodeado: todo sale del sistema de diseño." },
+          { "title": "Accesible por defecto", "text": "Contraste, focus visible y soporte de teclado no son opcionales." }
+        ]
+      },
+      {
+        "name": "IA",
+        "principles": [
+          { "title": "La IA propone, el equipo decide", "text": "Todo output de un modelo pasa por revisión humana antes de producción." },
+          { "title": "Evaluar antes de lanzar", "text": "Cada feature con IA tiene un set de evaluación y un umbral de calidad." }
+        ]
+      },
+      {
+        "name": "Seguridad",
+        "principles": [
+          { "title": "Mínimo privilegio", "text": "Cada servicio y persona tiene solo los permisos que necesita." },
+          { "title": "Secretos fuera del código", "text": "Las credenciales viven en el gestor de secretos, nunca en el repositorio." }
+        ]
+      },
+      {
+        "name": "Operaciones",
+        "principles": [
+          { "title": "Todo despliegue es reversible", "text": "Si no se puede hacer rollback en minutos, no se despliega." },
+          { "title": "Los incidentes dejan aprendizaje", "text": "Cada incidente termina en un postmortem sin culpables." }
+        ]
+      }
+    ],
+    "cta": {
+      "title": "Míralos en la práctica.",
+      "text": "Las notas de Engineering cuentan cómo estos criterios se usan — y se rompen — en el día a día.",
+      "button": "Leer Engineering"
+    }
   },
   "resourcesPage": {
+    "eyebrow": "Resources",
     "title": "Empieza con una base sólida.",
-    "text": "Templates, componentes, configuraciones y recursos listos para adaptar a tu siguiente proyecto."
+    "text": "Templates, componentes, configuraciones y recursos listos para adaptar a tu siguiente proyecto.",
+    "slogan": ["Listos para usar.", "Con los estándares del equipo.", "Tuyos para forkear."],
+    "filtersLabel": "Filtrar por",
+    "resourceDescriptions": [
+      "Starter full-stack de SaaS con auth, facturación y dashboard.",
+      "Interfaz de chat en streaming conectada a cualquier proveedor de modelos.",
+      "Componentes accesibles y tokens listos para usar.",
+      "Enrutamiento declarativo y rate limiting para el Gateway.",
+      "Landing de marketing con el sistema de diseño de Hemia.",
+      "Base compartida de tsconfig para todo proyecto Hemia."
+    ],
+    "open": "Abrir",
+    "cta": {
+      "title": "Aporta un recurso.",
+      "text": "¿Tienes un template o config que valga la pena compartir? Abre un pull request.",
+      "button": "Síguenos en GitHub"
+    }
   },
   "engineeringPage": {
+    "eyebrow": "Engineering",
     "title": "Notas desde el proceso.",
-    "text": "Decisiones, problemas y aprendizajes del equipo mientras diseñamos, construimos y operamos productos. Publicamos desde la práctica, no desde la tendencia."
+    "text": "Decisiones, problemas y aprendizajes del equipo mientras diseñamos, construimos y operamos productos. Publicamos desde la práctica, no desde la tendencia.",
+    "slogan": ["Escrito desde la práctica.", "No desde la tendencia.", "Primero se lanza, luego se cuenta."],
+    "postTitles": [
+      "Cómo evaluamos las respuestas de IA antes de llevarlas a producción.",
+      "Por qué reemplazamos nuestro sistema de permisos.",
+      "Lo que aprendimos manteniendo un monorepo con varios productos.",
+      "Los design tokens que sobrevivieron a tres rediseños.",
+      "Migrar a React Server Components sin romper la app.",
+      "Rotar secretos sin downtime."
+    ],
+    "cta": {
+      "title": "Lee también el código.",
+      "text": "Cada decisión de aquí aparece en los proyectos open source en GitHub.",
+      "button": "Explorar open source"
+    }
   }
 }

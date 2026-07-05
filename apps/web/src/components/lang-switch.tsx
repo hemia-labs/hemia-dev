@@ -1,6 +1,5 @@
 "use client";
 
-import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { cn } from "@/lib/utils";
 
@@ -16,7 +15,9 @@ export function LangSwitch({ lang }: { lang: string }) {
       {langs.map((l, i) => (
         <span key={l} className="flex items-center gap-1">
           {i > 0 && <span className="text-muted-foreground/40">/</span>}
-          <Link
+          {/* ponytail: <a> (nav dura), no <Link>: cambiar de locale re-renderiza el <html>
+              del layout raíz en cliente y React avisa por los <script> de Next. Nav soft no aporta aquí. */}
+          <a
             href={`/${l}${rest === "/" ? "" : rest}`}
             className={cn(
               "uppercase transition-colors hover:text-foreground",
@@ -24,7 +25,7 @@ export function LangSwitch({ lang }: { lang: string }) {
             )}
           >
             {l}
-          </Link>
+          </a>
         </span>
       ))}
     </div>

@@ -106,11 +106,44 @@
       "Built in the open.",
       "Maintained in production."
     ],
+    "detail": {
+      "featuresEyebrow": "Features",
+      "featuresTitle": "What's included.",
+      "specsTitle": "Specs",
+      "releasesTitle": "Releases",
+      "moreEyebrow": "Ecosystem",
+      "moreTitle": "More from Hemia.",
+      "moreCta": "View all products",
+      "quickstartEyebrow": "Quickstart",
+      "quickstartTitle": "Up and running in seconds."
+    },
     "viewDocs": "View documentation"
   },
   "lab": {
     "title": "Lab",
-    "subtitle": "Experiments and prototypes. None of this is stable."
+    "subtitle": "Experiments and prototypes. None of this is stable.",
+    "eyebrow": "Labs",
+    "badge": "Experiment",
+    "slogan": ["Built to try things.", "Not to last.", "Some become products."],
+    "status": { "active": "active", "archived": "archived" },
+    "experimentDescriptions": [
+      "First lab experiment. A placeholder to wire up the pipeline.",
+      "Interactive playground to test prompts against several models.",
+      "Rendering React components at the edge, close to the user.",
+      "A visual explorer for inferred TypeScript types. Archived."
+    ],
+    "cta": {
+      "title": "See what ships.",
+      "text": "Experiments that graduate end up in Products.",
+      "button": "Explore products"
+    },
+    "detail": {
+      "disclaimer": "Experiments are unstable by design. Anything here can change or disappear without notice.",
+      "otherEyebrow": "Lab",
+      "otherTitle": "Other experiments.",
+      "otherCta": "Back to Lab",
+      "github": "View on GitHub"
+    }
   },
   "changelog": {
     "title": "Changelog",
@@ -129,19 +162,130 @@
     "subtitle": "Questions, ideas or feedback? Write to us."
   },
   "openSourcePage": {
+    "eyebrow": "Open source",
+    "slogan": ["Open by design.", "Documented to be used.", "Maintained to last."],
     "title": "We build in the open.",
-    "text": "Libraries, components, templates and tools we use to build products inside the Hemia ecosystem. Open source with intent: every project with a purpose, license and maintainer."
+    "featured": {
+      "eyebrow": "Featured",
+      "texts": [
+        "Turns any repo into a queryable graph (symbols, calls, dependencies) exposed over MCP: agents navigate code structure with hundreds of tokens instead of tens of thousands.",
+        "The agentic document framework: define templates as code and generate PDF, DOCX and HTML deterministically. Agents write JSON over MCP; Docrail writes the document with governance, versioning and branding.",
+        "The heart of validation at Hemia: define the schema once, get inferred types and readable error messages on client and server.",
+        "Accessible components on top of Radix, styled with Hemia's design tokens. Copy the code: no runtime dependency.",
+        "Scaffolding, code generators and preview deploys without leaving the terminal."
+      ],
+      "github": "View on GitHub",
+      "viewProduct": "View product"
+    },
+    "moreTitle": "More repositories.",
+    "text": "Libraries, components, templates and tools we use to build products inside the Hemia ecosystem. Open source with intent: every project with a purpose, license and maintainer.",
+    "repoDescriptions": [
+      "Typed data validation, shared between frontend and backend.",
+      "Accessible components with custom tokens on top of Tailwind.",
+      "Command-line tool for scaffolding projects.",
+      "Shared TypeScript, ESLint and Prettier configurations.",
+      "React hooks we reuse across every product.",
+      "Documentation theme built on top of fumadocs."
+    ],
+    "contribute": {
+      "title": "Contribute.",
+      "text": "Issues, ideas and pull requests are welcome in every repository.",
+      "cta": "Follow on GitHub"
+    }
   },
   "standardsPage": {
+    "eyebrow": "Standards",
     "title": "How we build.",
-    "text": "Standards and principles we use to make product, design and engineering decisions. They are not universal rules: they are criteria the team maintains and evolves."
+    "text": "Standards and principles we use to make product, design and engineering decisions. They are not universal rules: they are criteria the team maintains and evolves.",
+    "slogan": ["Criteria, not rules.", "Written from practice.", "Maintained as a team."],
+    "disciplines": [
+      {
+        "name": "Engineering",
+        "principles": [
+          { "title": "Code is always reviewed", "text": "No change reaches main without a second pair of eyes." },
+          { "title": "Boring over clever", "text": "We pick the solution anyone on the team can maintain at 3am." }
+        ]
+      },
+      {
+        "name": "Product",
+        "principles": [
+          { "title": "The problem before the solution", "text": "Nothing gets built without explaining what problem it solves and for whom." },
+          { "title": "Measure before opining", "text": "Product decisions are argued with data, not with hierarchy." }
+        ]
+      },
+      {
+        "name": "Design",
+        "principles": [
+          { "title": "Tokens, not values", "text": "No hardcoded colors or radii: everything comes from the design system." },
+          { "title": "Accessible by default", "text": "Contrast, visible focus and keyboard support are not optional." }
+        ]
+      },
+      {
+        "name": "AI",
+        "principles": [
+          { "title": "AI proposes, the team decides", "text": "Every model output goes through human review before production." },
+          { "title": "Evaluate before shipping", "text": "Every AI feature has an evaluation set and a quality threshold." }
+        ]
+      },
+      {
+        "name": "Security",
+        "principles": [
+          { "title": "Least privilege", "text": "Every service and person gets only the permissions they need." },
+          { "title": "Secrets out of the code", "text": "Credentials live in the secrets manager, never in the repository." }
+        ]
+      },
+      {
+        "name": "Operations",
+        "principles": [
+          { "title": "Every deploy is reversible", "text": "If it can't be rolled back in minutes, it doesn't ship." },
+          { "title": "Incidents leave lessons", "text": "Every incident ends in a blameless postmortem." }
+        ]
+      }
+    ],
+    "cta": {
+      "title": "See them in practice.",
+      "text": "Engineering notes show how these criteria are used — and broken — day to day.",
+      "button": "Read Engineering"
+    }
   },
   "resourcesPage": {
+    "eyebrow": "Resources",
     "title": "Start on a solid base.",
-    "text": "Templates, components, configurations and resources ready to adapt to your next project."
+    "text": "Templates, components, configurations and resources ready to adapt to your next project.",
+    "slogan": ["Ready to use.", "Built to standards.", "Yours to fork."],
+    "filtersLabel": "Filter by",
+    "resourceDescriptions": [
+      "Full-stack SaaS starter with auth, billing and dashboard.",
+      "Streaming chat interface wired to any model provider.",
+      "Accessible components and tokens ready to drop in.",
+      "Declarative routing and rate limiting for the Gateway.",
+      "Marketing landing page with the Hemia design system.",
+      "Shared tsconfig base for every Hemia project."
+    ],
+    "open": "Open",
+    "cta": {
+      "title": "Contribute a resource.",
+      "text": "Have a template or config worth sharing? Open a pull request.",
+      "button": "Follow on GitHub"
+    }
   },
   "engineeringPage": {
+    "eyebrow": "Engineering",
     "title": "Notes from the process.",
-    "text": "Decisions, problems and lessons from the team while we design, build and operate products. We publish from practice, not from trends."
+    "text": "Decisions, problems and lessons from the team while we design, build and operate products. We publish from practice, not from trends.",
+    "slogan": ["Written from practice.", "Not from trends.", "Shipped, then told."],
+    "postTitles": [
+      "How we evaluate AI responses before shipping to production.",
+      "Why we replaced our permissions system.",
+      "What we learned maintaining a monorepo with several products.",
+      "The design tokens that survived three redesigns.",
+      "Migrating to React Server Components without breaking the app.",
+      "Rotating secrets without downtime."
+    ],
+    "cta": {
+      "title": "Read the code too.",
+      "text": "Every decision here shows up in the open source projects on GitHub.",
+      "button": "Explore open source"
+    }
   }
 }
