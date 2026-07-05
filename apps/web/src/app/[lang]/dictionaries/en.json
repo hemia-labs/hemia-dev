@@ -98,8 +98,14 @@
     }
   },
   "products": {
+    "eyebrow": "Hemia products",
     "title": "Products",
     "subtitle": "Everything Hemia builds and maintains.",
+    "slogan": [
+      "Designed with standards.",
+      "Built in the open.",
+      "Maintained in production."
+    ],
     "viewDocs": "View documentation"
   },
   "lab": {

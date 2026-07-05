@@ -98,8 +98,14 @@
     }
   },
   "products": {
+    "eyebrow": "Productos de Hemia",
     "title": "Productos",
     "subtitle": "Todo lo que Hemia construye y mantiene.",
+    "slogan": [
+      "Diseñado con estándares.",
+      "Construido en abierto.",
+      "Mantenido en producción."
+    ],
     "viewDocs": "Ver documentación"
   },
   "lab": {
